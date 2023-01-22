@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'KIMM_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+/* 예쁘고독특한 별모양 */
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+/* 조선100년체 */
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 마이쮸체 */
+@font-face {
+    font-family: 'TTCrownMychewR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/TTCrownMychewR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 안성탕면체 */
+@font-face {
+    font-family: 'Ansungtangmyun-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/Ansungtangmyun-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+#font-main{
+    padding: 10px;
+    border: solid 1px;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'KIMM_Bold';
+}
+#font1{
+    font-family:  'PyeongChangPeace-Bold';    
+}
+#font2{
+    font-family: 'ChosunCentennial';    
+}
+#font3{
+    font-family:'TTCrownMychewR';    
+}
+#font4{
+    font-family: 'Ansungtangmyun-Bold';    
+}
+#font5{
+    font-family:'KIMM_Bold';
+}
+
+li{
+    font-size: larger;
+    text-align: center;
+    padding: 5px;
+    list-style: none;
+    color: aliceblue;
+    border-bottom: solid 1px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h2{
+    color: aliceblue;
+    padding-bottom:10px;
+    margin-bottom: 10px;
+}
+form{
+    
+    margin-right:20px;
+    width: 50px;
+    height: 50px;
+}
+i{
+    padding-top: 15px;
+    font-size:xx-large;
+
+}
+canvas{
+    margin: 10px;
+    width: 800px;
+    height: 800px;
+    border:5px solid black;
+}
+    
+body{
+    width: 1000px;
+    display:inline;
+    color: aliceblue;
+    background-color:  rgb(0, 0, 0);
+}
+#nav{
+    width: 100vw;
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+#file{
+    visibility: hidden;
+}
+#centerNav{
+    width: 1000px;
+    display: flex;
+    justify-content: start;
+}
+#navL{
+    width: 150px;
+    display: flex;
+    
+}
+#eraserBox{
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+}
+#eraser-width{
+    padding: 5px;
+    margin-top: 18px;
+    color: aliceblue;
+    font-size: larger;
+    background-color: transparent;
+    height:25px;
+    width:80px;
+    box-shadow: none;
+}
+#destroy-btn div{
+    width: 750px;
+    display: flex;
+    justify-content: end;
+}
+#main{
+    display:flex;
+    justify-content:center;
+
+
+}
+.width{
+    width: 90px;
+}
+#brush{
+    width: 100px;
+    display:block;
+}
+#colorBox{
+    margin-left: 20px;
+    
+
+}
+
+.color-option{
+    width: 50px;
+    height: 50px;
+    /*마우스가 선택할때 손가락 모양으로 변함*/
+    cursor: pointer;
+
+}
+.color-option{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border: solid 5px rgb(255, 255, 255);
+    border-radius: 25%;
+}
+#text{
+    color: aliceblue;
+    padding: 10px;
+    margin-top: 10px;
+    height: 25px;
+    font-size:larger;
+    border: none;
+    border-bottom: solid 1px rgb(255, 255, 255) ;
+    background-color: transparent;
+}
+.hidden{
+    display: none;
+}
+.changeColor{
+    color: rgb(230, 147, 147);
+}
+#main-right{
+    margin-left: 10px;
+}
+#brushMain{
+    border-bottom: solid 1px;
+}
+#navMain{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#navMain div{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+}
+.layBtn{
+    
+    width: 30px;
+    display: flex;
+    justify-content: end;
+}
+.layBtn span{
+    font-size: larger;
+    margin-right: 10px;
+    padding-top: 15px;
+}
+#canvasBox{
+    display: flex;
+    justify-content:center;
+}
+canvas{
+    
+    background: no-repeat url("./img/BGIMG.jpg") ;
+    position: relative;
+    background-size: cover;
+}
+.layer{
+    
+    position: absolute;
+    color: aliceblue;
+    border: solid 1px;
+}
+#stampMain{
+    color: aliceblue;
+    border-bottom: solid 1px;
+    display: flex;
+    justify-content: space-between;
+}
+#stampMain div{
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: larger;
+    border: solid 1px;
+    border-radius: 25%;
+}
+#stamp-width{
+    padding-left: 20px;
+    color: aliceblue;
+    background-color: transparent;
+    font-size: larger;
+    height: 40px;
+    width:220px ;
+}

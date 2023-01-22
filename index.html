@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEME-MAKER</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/222e0d65f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="nav">
+        <div id="centerNav">
+            <div id="navL">
+                <form method="post" enctype="multipart/form-data">
+                    <label for="file">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </label>
+                    <input type="file" accept="image/*" id="file" name="file">
+                </form>
+                
+                <div id="save">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- 어떤형식이든 상관없이 이미지만 가져올수 있도록 파일 형식을 지정함 -->
+        
+        <!-- 전체 지우기 버튼 -->
+        
+    </div>
+    <div>
+        <div >
+            
+            
+        </div>
+        <div>
+            <div id="navMain">
+                <div>
+<!-- 
+                    <div id="LayerBtn5" class="layBtn hidden "s>
+                        <span>L5</span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div id="LayerBtn4" class="layBtn hidden">
+                        <span>L4</span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div id="LayerBtn3" class="layBtn hidden">
+                        <span>L3</span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div id="LayerBtn2"class="layBtn hidden">
+                        <span>L2</span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div id="LayerBtn1" class="layBtn">
+                        <i class="fa-solid fa-plus"></i>
+                    </div> -->
+                    
+                </div>
+                
+            </div>
+
+            <div id="main">
+                <div id="brush"> 
+                
+                    <div id="colorBox">
+                        <input type="color"  id="color">
+                        <!-- 사용자에게 만들어져 있는 색상중 선택하게 하기  -->
+                        <div class="color-option" style="background-color:#55efc4" data-color="#55efc4"></div>
+                        <div class="color-option" style="background-color:#00b894" data-color="#00b894"></div>
+                        <div class="color-option" style="background-color:#ffeaa7" data-color="#ffeaa7"></div>
+                        <div class="color-option" style="background-color:#fdcb6e" data-color="#fdcb6e"></div>
+                        <div class="color-option" style="background-color:#81ecec" data-color="#81ecec"></div>
+                        <div class="color-option" style="background-color:#00cec9" data-color="#00cec9"></div>
+                        <div class="color-option" style="background-color:#fab1a0" data-color="#fab1a0"></div>
+                        <div class="color-option" style="background-color:#e17055" data-color="#e17055"></div>
+                        <div class="color-option" style="background-color:#74b9ff" data-color="#74b9ff"></div>
+                        <div class="color-option" style="background-color:#a29bfe" data-color="#a29bfe"></div>
+                        <div class="color-option" style="background-color:#d63031" data-color="#d63031"></div>
+                        <div class="color-option" style="background-color:#dfe6e9" data-color="#dfe6e9"></div>
+                    </div>
+                    
+        
+                    <!-- 브러쉬 크기 -->
+                    <input id="line-width" class="width" type="range" min="1" max="20" value="5" step="0.1" />
+                    
+        
+                </div>
+                <div id="canvasBox"> 
+                    <canvas ></canvas>
+                </div>
+                <div id="main-right">
+                    <h2 id="brushMain">Brush Type</h2>
+                    <div id="icon">
+                        <!-- 캔버스 전체 채우기 -->
+                        <div id="destroy-btn">
+                            
+                            <i class="fa-regular fa-window-restore"></i>
+                            <span>Canvas-reset</span>
+                        </div> 
+    
+                        
+                        <div id="mode-btn"> 
+                            
+                            <i class="fa-solid fa-fill-drip"></i>
+                            <span>Canvas-fill</span>
+                        </div>
+                        <div id="brsh">
+                            <i class="fa-solid fa-paintbrush"></i>
+                            <span>Fill-brush</span>
+                        </div>
+                        
+                        <div id="eraserBox">
+                            <div id="eraser-btn">
+                                <i class="fa-solid fa-eraser"></i>
+                                <span>Eraser</span>
+                            </div>
+                            
+                            <input type="number" id="eraser-width"  min="50" value=100 >
+                        </div>
+                    </div>
+        
+                    <div id="stamp">
+                        <div id="stampMain">
+                            <h2>Text-Stamp </h2>
+                            <div> fill</div>
+                        </div>
+                        
+                        
+                        <input type="text" placeholder="Write and then double click" id="text" >
+                        <div id="font-change">
+                            <div id="font-main">글꼴</div>
+                            <ul id="font-list" >
+                                <li id="font1" value="0" name="예쁘고 독특한 별모양 ">예쁘고 독특한 별모양</li>
+                                <li id="font2" value=1 name="조선 100년체">조선 100년체</li>
+                                <li id="font3" value=2 name="마이쮸체"> 마이쮸체 </li>
+                                <li id="font4" value=3 name="안성탕면체"> 안성탕면체 </li>
+                                <li id="font5" value=4 name="한국기계연구원">한국기계연구원</li>
+                            </ul>
+                        </div>
+                        <input type="number" id="stamp-width" value=100 >
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
