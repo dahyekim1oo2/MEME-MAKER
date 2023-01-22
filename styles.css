@@ -4,11 +4,11 @@
     font-weight: 700;
     font-style: normal;
 }
-/* 예쁘고독특한 별모양 */
+/* 교보문고 손글씨 */
 @font-face {
-    font-family: 'PyeongChangPeace-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
-    font-weight: 700;
+    font-family: 'KyoboHandwriting2021sjy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 /* 조선100년체 */
@@ -18,10 +18,10 @@
     font-weight: normal;
     font-style: normal;
 }
-/* 마이쮸체 */
+/* 휴먼범석채 */
 @font-face {
-    font-family: 'TTCrownMychewR';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/TTCrownMychewR.woff2') format('woff2');
+    font-family: 'Humanbumsuk';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -40,13 +40,13 @@
     font-family: 'KIMM_Bold';
 }
 #font1{
-    font-family:  'PyeongChangPeace-Bold';    
+    font-family:  'KyoboHandwriting2021sjy';    
 }
 #font2{
     font-family: 'ChosunCentennial';    
 }
 #font3{
-    font-family:'TTCrownMychewR';    
+    font-family:'Humanbumsuk';    
 }
 #font4{
     font-family: 'Ansungtangmyun-Bold';    
