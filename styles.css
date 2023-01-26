@@ -55,7 +55,7 @@
     font-family:'KIMM_Bold';
 }
 
-li{
+#font-list li{
     font-size: larger;
     text-align: center;
     padding: 5px;
@@ -83,12 +83,7 @@ i{
     font-size:xx-large;
 
 }
-canvas{
-    margin: 10px;
-    width: 800px;
-    height: 800px;
-    border:5px solid black;
-}
+
     
 body{
     width: 1000px;
@@ -192,40 +187,60 @@ body{
 #brushMain{
     border-bottom: solid 1px;
 }
-#navMain{
+#navMain {
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content:center;
 }
-#navMain div{
-    width: 500px;
-    height: 50px;
+#navMain {
+    margin-top: 20px;
+    width: 800;
     display: flex;
-    justify-content: end;
+    justify-content:end;
 }
-.layBtn{
+#navMain div ul{
     
-    width: 30px;
+    font-size: large;
+    text-align: center;
+    list-style: none;
+    width: 800px;
     display: flex;
-    justify-content: end;
+    justify-content:start;
+    font-weight: bolder;
+    border: none;
+    margin: 0px;
 }
-.layBtn span{
-    font-size: larger;
-    margin-right: 10px;
-    padding-top: 15px;
+#navMain div li{
+    
+    color: black;
+    width: 50px;
+    font-size: large;
+    font-weight: bolder;
+    padding: 0px 10px 5px 10px;
+    margin-left: 5px;
+    background-color: antiquewhite;
+    border-radius: 15% 15% 0% 0% ;
+
 }
+#navMain div li i{
+    font-size: large;
+    padding: 0px ;
+}
+
+
 #canvasBox{
     display: flex;
     justify-content:center;
 }
 canvas{
-    
+    width: 800px;
+    height: 800px;
+    border:8px solid antiquewhite;
     background: no-repeat url("./img/BGIMG.jpg") ;
     position: relative;
     background-size: cover;
 }
 .layer{
-    
     position: absolute;
     color: aliceblue;
     border: solid 1px;
@@ -251,4 +266,42 @@ canvas{
     font-size: larger;
     height: 40px;
     width:220px ;
+}
+@media screen and (max-width:1200px) {
+    canvas{
+        width: 70vw;
+        height: 80vh;
+
+    }
+    .color-option{
+        display:none;
+    }
+    #line-width{
+        display:none;
+    }
+    #main-right{
+        width:15vw;
+    }
+    #text{
+        height: 2vh;
+        font-size:x-small;
+        width: 13vw;
+    }
+    #stamp-width{
+        width: 13vw;
+    }
+
+    
+}
+@media screen and (max-width:1000px) {
+    #main-right{
+        display: none;
+    }
+    canvas{
+        width:80vw;
+    }
+    #brush{
+        margin-right:1vw;
+    }
+
 }
